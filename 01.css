@@ -1,0 +1,40 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.work {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "A B B"
+    "C B B"
+    "D F G"
+    ;
+}
+
+.work-item {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.bluck {
+    background-color: #5d86d3;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-arer-a {
+    grid-area: A;
+}
+
+.grid-arer-b {
+    grid-area: B;
+}
+
+.color01 {
+    background-color: rgb(230, 96, 18);
+}
