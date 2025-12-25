@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>虛空概念</title>
+    </head>
+    <body>
+        <div id="header"></div>
+        <main id="main-content">
+            <section class="banner">
+                <div class="header-spacer"></div>
+                <div class="banner__container">
+                    <div
+                        class="banner__slide banner__slide--active"
+                        style="background-color: #eee"
+                    >
+                        <div class="void-title">虛空</div>
+                        <div class="void-text"></div>
+                    </div>
+                    <div class="banner__slide" style="background-color: #eee">
+                        <div class="void-title">空白</div>
+                        <div class="void-text">沒有內容，只有存在</div>
+                    </div>
+                    <div
+                        class="banner__slide"
+                        style="background-color: #000; color: #eee"
+                    >
+                        <div class="void-title">無光</div>
+                        <div class="void-text">空間存在，但不可見</div>
+                    </div>
+                    <div
+                        class="banner__slide"
+                        style="
+                            background: linear-gradient(#000a, #000a),
+                                repeating-radial-gradient(
+                                        #000 0 0.0001%,
+                                        #fff 0 0.0002%
+                                    )
+                                    50% 0 / 2500px 2500px,
+                                repeating-conic-gradient(
+                                        #000 0 0.0001%,
+                                        #fff 0 0.0002%
+                                    )
+                                    60% 60% / 2500px 2500px;
+                            background-blend-mode: normal, difference;
+                            color: #eee;
+                        "
+                    >
+                        <div class="void-title">雜訊</div>
+                        <div class="void-text">資訊過多，意義失效</div>
+                    </div>
+                </div>
+                <button
+                    class="banner__arrow banner__arrow--prev"
+                    aria-label="上一張"
+                >
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button
+                    class="banner__arrow banner__arrow--next"
+                    aria-label="下一張"
+                >
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+                <div class="banner__dots">
+                    <button
+                        class="banner__dot banner__dot--active"
+                        data-slide="0"
+                        aria-label="第 1 張"
+                    ></button>
+                    <button
+                        class="banner__dot"
+                        data-slide="1"
+                        aria-label="第 2 張"
+                    ></button>
+                    <button
+                        class="banner__dot"
+                        data-slide="2"
+                        aria-label="第 3 張"
+                    ></button>
+                    <button
+                        class="banner__dot"
+                        data-slide="3"
+                        aria-label="第 4 張"
+                    ></button>
+                </div>
+                <div class="banner__progress">
+                    <div class="banner__progress-bar"></div>
+                </div>
+            </section>
+            <section class="structure">
+                <h2 class="structure__title">結構</h2>
+                <div class="structure__block">
+                    <h3 class="structure__block-title">地板</h3>
+                    <p class="structure__block-text">下方不一定承載任何東西</p>
+                    <div
+                        class="structure__square structure__square--floor"
+                    ></div>
+                </div>
+                <div class="structure__block">
+                    <h3 class="structure__block-title">天花板</h3>
+                    <p class="structure__block-text">向上不代表離開</p>
+                    <div
+                        class="structure__square structure__square--ceiling"
+                    ></div>
+                </div>
+                <div class="structure__block">
+                    <h3 class="structure__block-title">結構物</h3>
+                    <p class="structure__block-text">看似被設計，卻沒有用途</p>
+                    <div
+                        class="structure__square structure__square--structure"
+                    ></div>
+                </div>
+                <div class="structure__block">
+                    <h3 class="structure__block-title">重複的空間</h3>
+                    <p class="structure__block-text">前進，只是再次抵達</p>
+                    <div class="structure__square structure__square--repeat">
+                        <div class="structure__portal-box"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="access">
+                <h2 class="access__title">出入口</h2>
+                <div class="access__block">
+                    <h3 class="access__block-title">洞口</h3>
+                    <p class="access__block-text">不是入口，是被吸走</p>
+                    <div class="access__square--hole"></div>
+                </div>
+                <div class="access__block">
+                    <h3 class="access__block-title">門</h3>
+                    <p class="access__block-text">選擇，使虛空看起來有秩序。</p>
+                    <div class="access__square--door"></div>
+                </div>
+                <div class="access__block">
+                    <h3 class="access__block-title">空間裂縫</h3>
+                    <p class="access__block-text">現實在此發生錯誤。</p>
+                    <div class="access__square--crack"></div>
+                </div>
+                <div class="access__block">
+                    <h3 class="access__block-title">直接傳送</h3>
+                    <p class="access__block-text">過程被省略，位置被重寫。</p>
+                    <div class="access__square--teleport">
+                        鍌抽€侀亷绋嬭鐪佺暐锛屼綅缃閲嶅
+                    </div>
+                </div>
+            </section>
+            <!-- 主要內容區域 -->
+        </main>
+        <div id="footer"></div>
+        <script src="js/loadParts.js"></script>
+        <script src="js/banner.js"></script>
+        <script src="js/headerScroll.js"></script>
+    </body>
+</html>
