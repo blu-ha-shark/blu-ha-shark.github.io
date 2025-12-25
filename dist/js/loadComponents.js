@@ -7,9 +7,7 @@
         fetch(url)
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error(
-                        `Failed to load ${url}: ${response.status}`
-                    );
+                    throw new Error(`無法載入 ${url}: ${response.status}`);
                 }
                 return response.text();
             })
@@ -17,11 +15,12 @@
                 container.innerHTML = html;
             })
             .catch((error) => {
-                console.error(`Error loading component from ${url}:`, error);
+                console.error(`載入組件錯誤 ${url}:`, error);
             });
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+        // 請確保 header.html 和 footer.html 與引用此 script 的 HTML 檔案位於同一層目錄
         loadComponent("./header.html", "header-container");
         loadComponent("./footer.html", "footer-container");
     });
