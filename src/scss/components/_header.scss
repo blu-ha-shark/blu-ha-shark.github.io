@@ -154,17 +154,73 @@
         }
     }
 
+    // 漢堡選單按鈕
+    &__toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 100;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        &--active {
+            span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+        }
+    }
+
     // 響應式設計
     @media (max-width: 768px) {
         &__container {
-            flex-direction: column;
-            gap: 1rem;
+            flex-wrap: wrap;
         }
 
-        &__nav-list {
-            flex-direction: column;
-            gap: 1rem;
-            text-align: center;
+        &__toggle {
+            display: block;
+        }
+
+        &__nav {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+
+            &--open {
+                max-height: 400px;
+                margin-top: 1rem;
+                border-top: 1px solid #eee;
+            }
+
+            &-list {
+                flex-direction: column;
+                gap: 0;
+                text-align: center;
+            }
+
+            &-link {
+                display: block;
+                padding: 1rem;
+
+                &:hover {
+                    background-color: #f9f9f9;
+                }
+            }
         }
     }
 }
