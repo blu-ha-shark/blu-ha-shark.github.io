@@ -57,10 +57,9 @@
             });
         }
     }
-
-    document.addEventListener("DOMContentLoaded", () => {
-        // 修正路徑：指向 dist/js/parts/ 下的檔案
-        loadComponent("dist/js/parts/header.html", "header");
-        loadComponent("dist/js/parts/footer.html", "footer");
+ document.addEventListener("DOMContentLoaded", () => {
+        // 載入同層級的 header.html 和 footer.html
+        loadComponent("./header.html", "header");
+        loadComponent("./footer.html", "footer");
     });
 })();
