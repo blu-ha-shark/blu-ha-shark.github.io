@@ -20,7 +20,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        // 請確保 header.html 和 footer.html 與引用此 script 的 HTML 檔案位於同一層目錄
+        // 載入同層級的 header.html 和 footer.html
         loadComponent("./header.html", "header");
         loadComponent("./footer.html", "footer");
     });
